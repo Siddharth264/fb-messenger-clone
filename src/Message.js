@@ -23,7 +23,15 @@ const Message = forwardRef(({messageId, message, username}, ref
             <Typography color = 'blue' variant="h5" component="h2">
             {!isUser &&  `${message.username || 'Unknown User'} :`} {message.message} 
 
-            <Button  disabled={username !== message.username} onClick={(event) => db.collection('messages').doc(messageId).delete()}><DeleteIcon/></Button>
+            {
+                isUser ? (
+                    <Button  disabled={username !== message.username} onClick={(event) => db.collection('messages').doc(messageId).delete()}><DeleteIcon/></Button>
+
+                ) : (
+                    <small></small>
+                )
+            }
+
             
             </Typography>
             

@@ -8,8 +8,7 @@
 .message__user{
     margin-left: auto;
     color: blue;
-    text-align: right !important;
-    
+    text-align: right !important;  
 }
 
 .message__userCard{
