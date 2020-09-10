@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+.app__form {
+  padding: 20px;
+  position: fixed;
+  bottom:0;
+  z-index: 1;
+  background-color: blanchedalmond;
+  width: 100%;
+  margin: 20px;
+}
+
+.app__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+
+}
+
+.app__iconButton {
+  flex: 0;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
