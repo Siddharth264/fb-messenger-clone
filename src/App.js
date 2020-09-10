@@ -70,6 +70,10 @@ function App() {
         ))
       }
       </FlipMove>
+
+      <div className="emptySpace">
+
+      </div>
     </div>
   );
 }
